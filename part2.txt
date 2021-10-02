@@ -12,3 +12,21 @@ Question 9: 2020sucked
 Question 10: listenToTheBlackKeys
 Question 11: allyComesFirst
 Question 12: iLoveWebDev
+
+
+<em>Lots</em> of room for creativity; allow students flexibility <br>
+            <span><strong>Concern</strong><i>(raised by Jaime)</i>:</span> Video and Audio clip
+            to be included; what are allowed? <br>
+
+            <strong>Solution:</strong> Custom recording our YouTube video acceptable,
+            must be able to attain source files. <br>
+          
+            <img src="images/Sample_of_Meeting_Minutes.png" alt="Sample of Meeting Minutes">
+
+            <details>
+              <summary>Meeting Minutes Example</summary>
+              <p>
+                Students should try to create a sample meeting minutes page using
+                HTML to create all relevant items e.g. attendance, new business, etc.
+              </p>
+            </details>
