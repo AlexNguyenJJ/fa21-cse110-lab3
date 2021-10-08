@@ -2,6 +2,7 @@
 Replace generic name with actual name when used.
 
 Attendees:
+
 [Person A](#person-a)
 
 [Person B](#person-b)
