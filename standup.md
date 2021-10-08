@@ -1,21 +1,14 @@
 # Standup Notes Template (Round Robin Style - 7 people)
 Replace generic name with actual name when used.
 
-Attendees:
-
-[Person A](#person-a)
-
-[Person B](#person-b)
-
-[Person C](#person-c)
-
-[Person D](#person-d)
-
-[Person E](#person-e)
-
-[Person F](#person-f)
-
-[Person G](#person-g)
+Attendees:  
+[Person A](#person-a)  
+[Person B](#person-b)  
+[Person C](#person-c)  
+[Person D](#person-d)  
+[Person E](#person-e)  
+[Person F](#person-f)  
+[Person G](#person-g)  
 
 ##### SCHEDULED time & date for Scrums/Standups:
 
