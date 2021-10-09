@@ -10,6 +10,12 @@
       <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
       <link rel="manifest" href="favicon/site.webmanifest">
 
+      <!--Font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+      
+
       <!--External CSS-->
       <link rel="stylesheet" href="mainstyle.css">
 
@@ -26,7 +32,7 @@
 
     <body>
       <header>
-        <div>Sections:</div>
+        <section class="sections">Sections:</section>
         <nav>
           <ul>
             <li><a href=#attendanceList>Attendance List</a></li>
@@ -48,9 +54,9 @@
 
         <hr>
 
-        <h2 style="color:rgb(0,0,255);width:6.5em;">Lab 2 Prep</h2>
+        <h2 id="contentTopic">Lab 2 Prep</h2>
         <h2 style="color:darkslategray">September 29, 2021</h2>
-
+        <p class="secret">SUPERSECRETTEXT</p>
         
         <section>
           <h3 id="attendanceList">Attendance List:</h3>
@@ -108,7 +114,8 @@
           
           </p>
 
-          <img style="margin-left:40px"src="images/Sample_of_Meeting_Minutes.png" alt="Sample of Meeting Minutes">
+          <img style="margin-left:40px"src="images/Sample_of_Meeting_Minutes.png"
+          alt="Sample of Meeting Minutes"title="SampleMeetingMinutes">
 
           <details>
             <summary style="margin-left:40px">Meeting Minutes Example</summary>
@@ -124,7 +131,7 @@
 
         <section><h3 id="recordings">Recordings</h3>
 
-          <h4 style="margin-left:40vw;margin-top:1ch">VIDEO</h4>
+          <h4 style="margin-left:40vw;margin-top:1ch"title="Sample Meeting">VIDEO</h4>
           <video controls width="250">
 
             <source src="media/Sample_HOA_Meeting.mp4"
@@ -145,7 +152,7 @@
         <h3 id="forms">Forms!</h3>
 
         <form>
-          <label for="textInput">Enter anything!</label> <br>
+          <label for="textInput" title="it won't matter anyways">Enter anything!</label> <br>
           <input type="text" id="textInput" name="textInput">
         </form>
 
@@ -162,18 +169,16 @@
             <input type="radio" id="blue" name="color" value="blue">
             <label for="blue">Blue</label>
           </fieldset>
-        </form>
 
-        <form>
           <label for="whyColor">Why did you pick this color?</label>
           <textarea id="whyColor" name="whyColor" rows="5" cols="50">
             I picked this color because it's my favorite color
           </textarea>
         </form>
 
-        <form>
+        <form class="gridContainer">
           <label for="yesOrNo">This is a yes or no question</label>
-          <input list="yesOrNoOptions" id="yesOrNo" name="yesOrNo">
+          <input class="gridItem"list="yesOrNoOptions" id="yesOrNo" name="yesOrNo">
 
           <datalist id="yesOrNoOptions">
               <option value="Yes">
@@ -197,14 +202,14 @@
         <label for="button">You can click this button; it won't do anything</label>
         <button type="button" id="button">Click me!</button>
 
-        <form>
-          <input type="checkbox" id="eat" name="eat" value="eat">
+        <form class="parent checklist">
+          <input type="checkbox" id="eat" name="eat" value="eat" class="child checklistItem">
           <label for="eat">eat</label> <br>
 
-          <input type="checkbox" id="doWork" name="doWork" value="doWork">
+          <input type="checkbox" id="doWork" name="doWork" value="doWork"class="child checklistItem">
           <label for="doWork">Do work</label> <br>
 
-          <input type="checkbox" id="sleep" name="sleep" value="sleep">
+          <input type="checkbox" id="sleep" name="sleep" value="sleep"class="child checklistItem">
           <label for="sleep">sleep</label> <br>
         </form>
 
@@ -217,7 +222,7 @@
       <hr>
 
       <footer>
-        <div>Sections:</div>
+        <section class="sections">Sections:</section>
         <nav>
           <ul>
             <li><a href=#attendanceList>Attendance List</a></li>
