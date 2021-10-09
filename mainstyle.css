@@ -1,16 +1,27 @@
 /* Style sheet by Alex Nguyen for Lab 3 of CSE110 */
 
-/* This will be ignored since its overriden by the internal CSS*/
-body {
-  background-color: lightblue;
+
+@media (max-width: 1000px) {
+  h1 {
+    background-color: red;
+  }
 }
+
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
 
 /* This too */
 h1 {
   color: navy;
   width: 650px;
+  text-decoration:underline;
+  text-align: center;
   margin: auto;
   padding: 0.5cm;
+  position: sticky;
+  top: 20px;
 }
 
 /* Color will be overwritten until another h2 is used because for now, every h2
@@ -25,15 +36,7 @@ h3 {
   margin-left: 40px;
 }
 
-p {
-  margin-left: 40px;
-}
-
-ul {
-  margin-left: 40px
-}
-
-ol {
+p, ul, ol {
   margin-left: 40px;
 }
 
@@ -67,3 +70,82 @@ img {
   border-width: medium;
   border-radius: 5px;
 }
+
+section.sections {
+  margin-left: 20px;
+}
+
+p.secret {
+  display: none;
+}
+
+#contentTopic {
+  color:rgb(0,0,255);
+  width:6.5em;
+}
+
+button {
+  display: block;
+  height: 1in;
+  width: 3in;
+  max-width: 4in;
+  max-height: 2in;;
+}
+
+button:hover {
+  color:coral;
+}
+
+[title="SampleMeetingMinutes"] {
+  position: relative;
+  left: 20px; 
+}
+
+a:active {
+  color:darkviolet;
+}
+
+.parent.checklist {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.child.checklistItem {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  flex-basis: auto;
+}
+
+ul li {
+  color:fuchsia;
+}
+
+details > summary {
+  background-color: gold;
+}
+
+fieldset ~ label {
+  color:purple;
+}
+
+#agenda + p {
+  background-color:powderblue;
+  width: 5in;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: [first] 80px [line2] 100px [line3] auto [col4-start] 100px [five] 80px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 50px [third-line] auto [last-line];
+}
+
+.gridItem {
+  grid-column: 2 / span 2;
+  grid-row: third-line / 2;
+}
+
+
+
